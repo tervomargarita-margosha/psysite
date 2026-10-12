@@ -1,0 +1,335 @@
+---
+layout: default
+title: ""
+---
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="blob blob--1"></div>
+  <div class="blob blob--2"></div>
+  <svg class="hero__line" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M-50 380 C 200 380, 300 100, 550 100 S 900 350, 900 350" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  </svg>
+
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <h1 class="hero__title">Привет, меня<br>зовут Маргарита</h1>
+      <p class="hero__subtitle">Я психолог для подростков<br>и молодых взрослых</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Задать вопрос</a>
+        <a href="#about" class="btn btn--ghost">Узнать больше</a>
+      </div>
+    </div>
+    <div class="hero__photo-wrap">
+      <div class="hero__photo-blob"></div>
+      <img src="{{ '/images/margarita.jpg' | relative_url }}" alt="Маргарита Терво, психолог" class="hero__photo">
+      <div class="hero__badge">psy</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ВИДЕОВИЗИТКА ===== -->
+<section class="video-section" id="video">
+  <div class="container">
+    <div class="video-inner">
+      <div class="video-text">
+        <h2 class="section-title section-title--left">Давайте познакомимся</h2>
+        <p class="video-text__sub">Короткое видео, чтобы вы могли почувствовать, комфортно ли вам будет со мной работать</p>
+        <p class="video-text__note">Если после просмотра остались вопросы — напишите мне, я отвечу лично</p>
+        <a href="https://t.me/tervo_psy" class="btn btn--primary" target="_blank" rel="noopener">Написать в Telegram</a>
+      </div>
+      <div class="video-wrap">
+        <div class="blob blob--3"></div>
+        <div class="video-frame">
+          <video controls playsinline preload="metadata" poster="{{ '/images/video-poster.jpg' | relative_url }}" aria-label="Видеовизитка психолога Маргариты Терво">
+            <source src="{{ '/media/intro-video.mp4' | relative_url }}" type="video/mp4">
+            Ваш браузер не поддерживает воспроизведение видео.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ОБО МНЕ ===== -->
+<section class="about section" id="about">
+  <div class="container about__inner">
+    <h2 class="section-title">Обо мне</h2>
+    <p class="about__lead">
+      Я работаю с подростками и молодыми взрослыми, помогая им справляться с тревогой,
+      сложными чувствами и вопросами отношений. В своей работе я создаю бережное
+      и безопасное пространство, в котором можно исследовать себя в своём темпе —
+      без оценок, давления и готовых решений.
+    </p>
+    <div class="card about__card">
+      <h3 class="about__subtitle">Образование</h3>
+      <ul class="about__list">
+        <li>Факультет психологии СПбГУ (2026 г.)</li>
+        <li>Психологическая работа с детьми и подростками (Архитектура будущего, 2024)</li>
+        <li>Профессионально-личностное консультирование (СПбГУ, 2025)</li>
+        <li>В процессе — гештальт-терапия в «Московском гештальт институте»</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ДИПЛОМЫ ===== -->
+<section class="diplomas section" id="diplomas">
+  <div class="container">
+    <h2 class="section-title">Дипломы и сертификаты</h2>
+    <div class="diplomas__grid">
+      <button class="diploma" data-img="{{ '/images/diploma-1.jpg' | relative_url }}" aria-label="Открыть диплом 1">
+        <img src="{{ '/images/diploma-1.jpg' | relative_url }}" alt="Диплом 1" loading="lazy">
+      </button>
+      <button class="diploma" data-img="{{ '/images/diploma-2.jpg' | relative_url }}" aria-label="Открыть диплом 2">
+        <img src="{{ '/images/diploma-2.jpg' | relative_url }}" alt="Диплом 2" loading="lazy">
+      </button>
+      <button class="diploma diploma--wide" data-img="{{ '/images/diploma-3.jpg' | relative_url }}" aria-label="Открыть диплом 3">
+        <img src="{{ '/images/diploma-3.jpg' | relative_url }}" alt="Диплом 3" loading="lazy">
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ЗАПРОСЫ (карусель) ===== -->
+<section class="requests section" id="requests">
+  <div class="container">
+    <h2 class="section-title">Ко мне можно обратиться<br>со следующими запросами</h2>
+    <p class="section-subtitle">Наведите на карточку, чтобы увидеть подробнее</p>
+
+    <div class="requests__carousel">
+      <div class="request-card">
+        <p class="request-card__title">Сложности с принятием решения</p>
+        <p class="request-card__hint">учёба, переезд, расставание, увольнение и т.д.</p>
+      </div>
+      <div class="request-card">
+        <p class="request-card__title">Сложности в отношениях</p>
+        <p class="request-card__hint">дружеских, романтических, семейных, рабочих и т.п.</p>
+      </div>
+      <div class="request-card">
+        <p class="request-card__title">«Хочу, но не могу»</p>
+      </div>
+      <div class="request-card">
+        <p class="request-card__title">Тяжёлые переживания</p>
+        <p class="request-card__hint">тревога, страхи, беспокойство, горевание</p>
+      </div>
+      <div class="request-card">
+        <p class="request-card__title">«Не могу контролировать эмоции» / «Не могу проявлять эмоции»</p>
+      </div>
+      <div class="request-card">
+        <p class="request-card__title">Ничего не чувствую / не хочу</p>
+        <p class="request-card__hint">пустота, бессмысленность жизни</p>
+      </div>
+      <div class="request-card">
+        <p class="request-card__title">«Не понимаю что, но что-то не так»</p>
+      </div>
+      <div class="request-card">
+        <p class="request-card__title">Познание себя и саморазвитие</p>
+      </div>
+    </div>
+
+    <p class="requests__note">И множество других сложностей и формулировок — буду рада ответить в переписке, смогу ли вам помочь.</p>
+  </div>
+</section>
+
+<!-- ===== ЦЕННОСТИ ===== -->
+<section class="values section" id="values">
+  <div class="container">
+    <h2 class="section-title">Работа со мной — это</h2>
+    <div class="values__grid">
+      <div class="card value-card">
+        <div class="value-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
+        </div>
+        <h3>Психологическая безопасность</h3>
+        <p>Прозрачные договорённости, честное и бережное общение.</p>
+      </div>
+      <div class="card value-card">
+        <div class="value-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        </div>
+        <h3>Внимание к вам</h3>
+        <p>Вашим взглядам, чувствам, состоянию.</p>
+      </div>
+      <div class="card value-card">
+        <div class="value-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 22v-6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M22 12h-6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2"/></svg>
+        </div>
+        <h3>Изменения</h3>
+        <p>В мыслях, самочувствии, действиях, отношениях, в жизни в целом.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ГЕШТАЛЬТ-ПОДХОД ===== -->
+<section class="approach section" id="approach">
+  <div class="container approach__inner">
+    <h2 class="section-title">О гештальт-подходе</h2>
+    <div class="approach__text">
+      <p>Гештальт-подход — это направление психотерапии, в основе которого лежит идея целостности человека. Мы рассматриваем не отдельные «симптомы» или «проблемы», а всю вашу жизнь как единую систему, где тело, чувства, мысли и отношения тесно связаны между собой.</p>
+      <p>Главная цель — помочь вам восстановить контакт с собой: со своими чувствами, потребностями, желаниями — и научиться жить более осознанно и полно в настоящем моменте. Часто то, что мы называем «проблемой», — это <strong>следствие</strong> утраченного контакта с собой или незавершённых ситуаций из прошлого, которые продолжают влиять на нас здесь и сейчас.</p>
+      <p><em>Как мы работаем.</em> Гештальт-терапия — это диалог, в котором я не оцениваю и не даю советов, а помогаю вам замечать, что происходит с вами в моменте. Вместе мы исследуем ваши чувства, телесные реакции, способы, которыми вы строите отношения с другими и с собой. Я могу предложить эксперименты, упражнения или метафоры, чтобы вы могли по-новому взглянуть на знакомые ситуации.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== НА СЕССИЯХ Я ===== -->
+<section class="sessions section" id="sessions">
+  <div class="container">
+    <h2 class="section-title">На сессиях я:</h2>
+    <div class="sessions__grid">
+      <div class="card session-card">
+        <p class="session-card__no">Не оцениваю</p>
+        <p class="session-card__yes">Обращаюсь к вашим чувствам или говорю, что чувствую относительно ваших слов.</p>
+      </div>
+      <div class="card session-card">
+        <p class="session-card__no">Не даю советов и не агитирую в сторону их выполнения</p>
+        <p class="session-card__yes">Даю рекомендации в рамках моей компетенции — техники, упражнения, обращение к смежным специалистам.</p>
+      </div>
+      <div class="card session-card">
+        <p class="session-card__no">Не командую вами, не «тяну» в ту или иную сторону, не давлю</p>
+        <p class="session-card__yes">Способствую тому, чтобы вы могли говорить о том и так, как хочется вам. Если мне кажется, что мы далеко ушли от темы запроса, могу мягко это обозначить и поинтересоваться, хотелось ли бы вернуться к изначальной теме. Если у меня есть какое-то предположение — открыто выношу его на обсуждение.</p>
+      </div>
+      <div class="card session-card">
+        <p class="session-card__no">Не перевожу внимание на свою жизнь и свои переживания</p>
+        <p class="session-card__yes">И ваше, и своё внимание направляю на вас. Я говорю о своих чувствах или опыте только относительно ваших слов и процесса работы, и только если вижу это полезным и уместным.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ФОРМАТЫ ===== -->
+<section class="formats section" id="formats">
+  <div class="container">
+    <h2 class="section-title">Форматы работы</h2>
+    <div class="formats__grid">
+      <div class="card format-card">
+        <h3>Единичная консультация</h3>
+        <p>Поддержка и заземление «здесь и сейчас», возможность получить информацию и разъяснения по своей проблеме, а также сформулировать возможные цели и получить рекомендации по самостоятельному продвижению к ним.</p>
+        <p class="format-card__price">4 000 ₽ <span>/ сессия</span></p>
+      </div>
+      <div class="card format-card">
+        <h3>Краткосрочная работа</h3>
+        <p>Помощь в проживании сложного периода или в продвижении в кризисном этапе с последующим самостоятельным движением.</p>
+        <p class="format-card__duration">Длительность: 5–10 встреч</p>
+        <p class="format-card__price">3 500 ₽ <span>/ сессия</span></p>
+      </div>
+      <div class="card format-card">
+        <h3>Долгосрочная терапевтическая работа</h3>
+        <p>Глубинная работа над запросом.</p>
+        <p class="format-card__price">3 000 ₽ <span>/ сессия</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== УСЛОВИЯ ===== -->
+<section class="conditions section" id="conditions">
+  <div class="container">
+    <h2 class="section-title">Условия работы</h2>
+    <div class="conditions__grid">
+      <div class="card condition-card">
+        <div class="condition-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <p><strong>Длительность сессии:</strong><br>55 минут</p>
+      </div>
+      <div class="card condition-card">
+        <div class="condition-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+        <p><strong>Онлайн:</strong><br>Я.Телемост или Контур.Толк</p>
+      </div>
+      <div class="card condition-card">
+        <div class="condition-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <p><strong>Очно:</strong><br>+500 ₽ к стоимости, СПб, Центральный район</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== НАЧАЛО РАБОТЫ ===== -->
+<section class="start section" id="start">
+  <div class="container">
+    <h2 class="section-title">Начало работы</h2>
+    <ol class="timeline">
+      <li class="timeline__item">
+        <div class="timeline__num">1</div>
+        <div class="timeline__body">
+          <h3>Переписка</h3>
+          <p>Тут я прошу вас описать свой запрос в нескольких предложениях и задать критически важные для вас вопросы о совместной работе. Далее мы можем договориться о времени и формате первой встречи.</p>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__num">2</div>
+        <div class="timeline__body">
+          <h3>Первичная консультация</h3>
+          <p>Исследуем проблему — что именно беспокоит, как давно, в каком контексте проблема возникла/возникает, как это влияет на удовлетворённость жизнью. Формулируем цель нашей совместной работы. Обсуждаем ожидания от совместной работы.</p>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__num">3</div>
+        <div class="timeline__body">
+          <h3>Психологический контракт</h3>
+          <p>Договариваемся о том, какой вклад в работу будет внесён с вашей и с моей стороны, какие условия нам необходимо соблюсти для успешной работы.</p>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__num">4</div>
+        <div class="timeline__body">
+          <h3>Дальнейшая работа</h3>
+          <p>Последовательно движемся к намеченной цели.</p>
+        </div>
+      </li>
+    </ol>
+    <div class="start__note card">
+      <p>В случае единичной консультации после обсуждения проблемы и формулировки цели я даю рекомендации — какими психологическими инструментами вы можете пользоваться самостоятельно для приближения к цели, к каким смежным специалистам стоит обратиться, на что обратить внимание, какими вопросами задаться.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== СВЯЗАТЬСЯ ===== -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <h2 class="section-title">Связаться со мной</h2>
+    <div class="contact__grid">
+      <a href="tel:+79111096619" class="card contact-card">
+        <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
+        <h3>Телефон</h3>
+        <p>8 911 109-66-19</p>
+      </a>
+      <a href="https://t.me/tervo_psy" class="card contact-card" target="_blank" rel="noopener">
+        <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.4l-3.4 16c-.2 1.1-.9 1.4-1.9.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1L18 5.6c.4-.3-.1-.5-.6-.2L7.2 12.2 3 10.9c-1.1-.3-1.1-1 .2-1.5L20 3.1c.9-.3 1.7.2 1.9 1.3z"/></svg></div>
+        <h3>Telegram</h3>
+        <p>@tervo_psy</p>
+      </a>
+      <a href="https://vk.ru/maante" class="card contact-card" target="_blank" rel="noopener">
+        <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 18c-5 0-8.1-3.5-8.3-9.3h2.6c.1 4.3 2 6.1 3.5 6.5V8.7h2.5v3.7c1.5-.2 3-1.7 3.5-3.7h2.5c-.4 2.4-2 3.9-3.1 4.6 1.1.5 3 1.9 3.7 4.7h-2.7c-.5-1.6-1.8-2.9-3.9-3.1V18H13z"/></svg></div>
+        <h3>ВКонтакте</h3>
+        <p>vk.ru/maante</p>
+      </a>
+    </div>
+    <p class="contact__note">Если сомневаетесь, подходит ли вам работа со мной — напишите, и мы вместе это обсудим.</p>
+  </div>
+</section>
+
+<!-- ===== СТАТЬИ (последние 3) ===== -->
+<section class="blog section" id="blog">
+  <div class="container">
+    <h2 class="section-title">Статьи</h2>
+    {% if site.posts.size > 0 %}
+    <div class="blog__grid">
+      {% for post in site.posts limit:3 %}
+      <article class="card blog-card">
+        <div class="blog-card__img"{% if post.image %} style="background-image:url('{{ post.image | relative_url }}');"{% endif %}></div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
+        <a href="{{ post.url | relative_url }}" class="blog-card__link">Читать →</a>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="blog__more">
+      <a href="{{ '/blog.html' | relative_url }}" class="btn btn--ghost">Все статьи</a>
+    </div>
+    {% else %}
+    <p class="blog__empty">Статьи скоро появятся.</p>
+    {% endif %}
+  </div>
+</section>

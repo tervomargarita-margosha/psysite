@@ -1,0 +1,27 @@
+---
+layout: default
+title: Статьи
+description: Статьи психолога Маргариты Терво о тревоге, отношениях, самооценке и поиске себя.
+---
+
+<section class="blog-page section">
+  <div class="container">
+    <h1 class="section-title">Статьи</h1>
+    <p class="section-subtitle">Заметки о тревоге, отношениях и поиске себя</p>
+
+    {% if site.posts.size > 0 %}
+    <div class="blog__grid">
+      {% for post in site.posts %}
+      <article class="card blog-card">
+        <div class="blog-card__img"{% if post.image %} style="background-image:url('{{ post.image | relative_url }}');"{% endif %}></div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
+        <a href="{{ post.url | relative_url }}" class="blog-card__link">Читать →</a>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="blog-page__empty">Здесь скоро появятся статьи.</p>
+    {% endif %}
+  </div>
+</section>

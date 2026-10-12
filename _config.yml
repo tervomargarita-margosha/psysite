@@ -1,0 +1,14 @@
+title: Психолог Маргарита Терво
+description: Психолог для подростков и молодых взрослых. Гештальт-подход, онлайн и очно в Санкт-Петербурге.
+url: "https://ваш-домен.ru"   # ← замените на ваш домен после подключения
+baseurl: ""                    # ← для своего домена оставьте пустым
+
+markdown: kramdown
+permalink: /articles/:title/   # URL статьи: /articles/nazvanie-stati/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "article"
